@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Year Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>❤️ Happy One-Year Anniversary, Isha! ❤️</h1>
+    <p>A collection of our cherished moments together</p>
+</header>
+<main>
+    <div class="interactive-area">
+        <!-- First 19 Boxes -->
+        <div class="image-box"><img src="image1.jpg" alt="Special Moment 1"><p>First Lunch!</p></div>
+        <div class="image-box"><img src="image2.jpg" alt="Special Moment 2"><p>First Date!</p></div>
+        <div class="image-box"><img src="image3.jpg" alt="Special Moment 3"><p>The Hill!</p></div>
+        <div class="image-box"><img src="image4.jpg" alt="Special Moment 4"><p>Senior Sunrise!</p></div>
+        <div class="image-box"><img src="image5.jpg" alt="Special Moment 5"><p>Snapchat Love</p></div>
+        <div class="image-box"><img src="image6.jpg" alt="Special Moment 6"><p>Fun in Landeza</p></div>
+        <div class="image-box"><img src="image7.jpg" alt="Special Moment 7"><p>Library Mini-Dates</p></div>
+        <div class="image-box"><img src="image8.jpg" alt="Special Moment 8"><p>EVHS Dandiya</p></div>
+        <div class="image-box"><img src="image9.jpg" alt="Special Moment 9"><p>Forever 17</p></div>
+        <div class="image-box"><img src="image10.png" alt="Special Moment 10"><p>HOCO Card</p></div>
+        <div class="image-box"><img src="image11.jpg" alt="Special Moment 11"><p>HOCO Asking Day</p></div>
+        <div class="image-box"><img src="image12.jpg" alt="Special Moment 12"><p>HOCO Pic 1</p></div>
+        <div class="image-box"><img src="image13.jpg" alt="Special Moment 13"><p>HOCO Pic 2</p></div>
+        <div class="image-box"><img src="image14.jpg" alt="Special Moment 14"><p>HOCO Pic 3</p></div>
+        <div class="image-box"><img src="image15.jpg" alt="Special Moment 15"><p>HOCO Pic 4</p></div>
+        <div class="image-box"><img src="image16.jpg" alt="Special Moment 16"><p>HOCO Pic 5</p></div>
+        <div class="image-box"><img src="image17.jpg" alt="Special Moment 17"><p>HOCO Pic 6</p></div>
+        <div class="image-box"><img src="image18.jpg" alt="Special Moment 18"><p>Second Date!</p></div>
+        <div class="image-box"><img src="image19.jpg" alt="Special Moment 19"><p>Second Date Lunch!</p></div>
+
+        <!-- 20th Box -->
+        <div class="image-box" id="special-box">
+            <img id="dynamic-image" src="image20a.jpg" alt="Special Moment 20">
+            <p>Poor Bachi!</p>
+        </div>
+    </div>
+    <!-- Write a paragraph about the surprise -->
+    <p>Click on the last box for a special surprise! ❤️</p>
+    <p>OMGGGG ITS DECEMBER THIRD!!!! HAPPYYYY ANNIVERSARY BABEEEE! I can’t believe that it’s only been a year it felt like way longer and everyone I talked to also thought that it’s been almost one and a half years. I’m so glad I spent this last year with you and I can say for fact, you’re the best person to ever come into my life and I’m just happy to be with you. I can’t wait to see what the future years look like being with you and enjoying our future anniversaries. Being together with you has enlightened me to know that I’m not fully alone in this world and there’s other people that care for me just like you do since you’re the reason I love living my life everyday. I know we have more relationship goals that we get to accomplish and I hope within the few years to come we will sort everything out then we’ll finally be together and get our sleepovers. I also know that both of us are gonna be going to college next year and at this point in time we may or may not be back here so I just wanna make the best of the time that we have right now with our anniversary and I want to say today in the library should be a blast.💥 Can you believe this all started through Snapchat? Now we have no record on who asked who out first, all we know is that during this time we were probably confessing our feelings for each other and stuff happened now we’re together and I can say is the best outcome I could’ve possibly imagined!!! I love you so much and I can’t wait to marry you in the future!<br><br><br></p>
+</main>
+<footer>
+    <p>❤️I love you sooo much!!! - Your ❤️ful lover</p>
+</footer>
+
+<script>
+    const specialBox = document.getElementById('special-box');
+    const dynamicImage = document.getElementById('dynamic-image');
+    let toggled = false;
+
+    specialBox.addEventListener('click', () => {
+      if (!toggled) {
+        dynamicImage.src = 'image20b.jpg'; // Second image
+        dynamicImage.alt = 'Special Moment 20 - Surprise';
+        toggled = true;
+      } else {
+        dynamicImage.src = 'image20a.jpg'; // Original image
+        dynamicImage.alt = 'Special Moment 20';
+        toggled = false;
+      }
+    });
+</script>
+</body>
+</html>
+
